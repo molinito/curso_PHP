@@ -28,7 +28,7 @@
 
 <body>
 <h1>Registro de Artículos</h1>
-<form name="form1"  method="get" action="insertar_registros.php">
+<form name="form1"  method="get" action="insertar2_registro.php">
     <table border="0" align="center">
     <tr>
 
