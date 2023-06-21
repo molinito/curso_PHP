@@ -6,50 +6,10 @@
 </head>
 
 <body>
+
+
 <?php
-/*
-
-    // $busqueda=$_GET["buscar"];
-
     
-    $itm=$_GET["item"]; // se recibe el dato del formulario
-    $descr=$_GET["descripción"];
-    $stk=$_GET["stock"];
-    $oc=$_GET["oc"];
-    $cons=$_GET["consumo"];
-
-    //llamar a la conexion de la BBDD de nombre datosBD.php
-    require("datosBD.php");
-
-    $conexion=mysqli_connect($db_host, $db_usuario, $db_contra, $db_nombre);
-
-
-    if(mysqli_connect_errno()){
-        echo "Fallo al conectar con la BBDD: " . mysqli_connect_error() . " - " . mysqli_connect_errno();
-        exit();
-    }
-
-    mysqli_set_charset($conexion, "utf8"); // para que se reconozcan los acentos latinos y caracteres especiales
-
-    $query="INSERT INTO Hoja1 (item, descripción, stock, oc, consumo) VALUES ('$itm', '$descr', '$stk', '$oc', '$cons)"; // para que busque la palabra en cualquier parte de la descripción
-
-    $resultados=mysqli_query($conexion, $query);
-
-    if($resultados==false){
-        echo "Error en la consulta";
-    }else{
-        echo "Registro guardado<br><br>";
-       /* echo "<table><tr><td>$item</td></tr>";
-        echo "<tr><td>$descripción</td></tr>";
-        echo "<tr><td>$stock</td></tr>";
-        echo "<tr><td>$oc</td></tr>";
-        echo "<tr><td>$consumo</td></tr></table>"; 
-    }
-
-    mysqli_close($conexion);
-
-    */
-
     if (isset($_GET["enviando"])) { // si se ha pulsado el boton de enviar
         $itm = $_GET["item"];
         $descr = $_GET["descripción"];
@@ -86,7 +46,7 @@
         mysqli_close($conexion); // se cierra la conexion
     }
     
-    ?>
+    ?> 
 
 </body>
 </html>
